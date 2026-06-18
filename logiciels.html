@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logiciels & Outils | Victor Morvan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .tools-hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); padding: 80px 0 60px; color: white; }
+        .tools-hero h1 { font-size: 2.4rem; margin: 8px 0; }
+        .tools-hero .tagline { font-size: .85rem; letter-spacing: 2px; text-transform: uppercase; color: #93c5fd; font-weight: 600; }
+        .tools-hero p { opacity: .8; font-size: .95rem; margin-top: 10px; max-width: 560px; }
+        .tools-page { padding: 60px 0; }
+        .tools-category { margin-bottom: 52px; }
+        .tools-category-title {
+            font-size: .7rem; font-weight: 800; letter-spacing: 3px;
+            text-transform: uppercase; color: #94a3b8;
+            border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 24px;
+        }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+        .tool-card {
+            background: white; border: 1px solid #e2e8f0; border-radius: 14px;
+            padding: 20px 18px; display: flex; gap: 14px; align-items: flex-start;
+            box-shadow: 0 2px 8px rgba(15,23,42,.04);
+            transition: transform .2s, box-shadow .2s, border-color .2s;
+        }
+        .tool-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(15,23,42,.1); border-color: #cbd5e1; }
+        .tool-icon {
+            width: 44px; height: 44px; border-radius: 11px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
+        }
+        .tool-name { font-weight: 700; font-size: .93rem; color: #0f172a; margin-bottom: 5px; }
+        .tool-desc { font-size: .82rem; color: #64748b; line-height: 1.55; margin: 0; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Image/photo.jpg" alt="Victor Morvan" class="header-photo">
+                Victor Morvan
+            </a>
+            <nav><ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="traiter.html">Traiter</a></li>
+                <li><a href="analyser.html">Analyser</a></li>
+                <li><a href="valoriser.html">Valoriser</a></li>
+                <li><a href="modeliser.html">Modéliser</a></li>
+                <li><a href="perspectives.html">Perspectives</a></li>
+                <li><a href="logiciels.html" class="active-link">Logiciels</a></li>
+                <li><a href="projet.html">Projet Pro</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="contact.html" class="btn-nav">Me Contacter</a></li>
+            </ul></nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tools-hero">
+            <div class="container">
+                <span class="tagline">Stack technique</span>
+                <h1>Logiciels & Outils</h1>
+                <p>Les environnements et logiciels que je maîtrise et mobilise dans mes projets — de la collecte à la restitution des données.</p>
+            </div>
+        </section>
+
+        <div class="tools-page">
+            <div class="container">
+
+                <!-- STATS & DATA SCIENCE -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Statistique & Data Science</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#dbeafe;color:#1d4ed8;"><i class="fa-solid fa-r-project"></i></div>
+                            <div>
+                                <div class="tool-name">R / RStudio</div>
+                                <p class="tool-desc">Langage statistique open source. RStudio est son environnement de développement intégré (IDE), permettant de combiner code, visualisations et rapports.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#ede9fe;color:#6d28d9;"><i class="fa-solid fa-globe"></i></div>
+                            <div>
+                                <div class="tool-name">R Shiny</div>
+                                <p class="tool-desc">Extension de R permettant de créer des applications web interactives directement depuis R, sans écrire de HTML ou JavaScript.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fef9c3;color:#a16207;"><i class="fa-brands fa-python"></i></div>
+                            <div>
+                                <div class="tool-name">Python</div>
+                                <p class="tool-desc">Langage de programmation généraliste très utilisé en data science, disposant d'un large écosystème de bibliothèques (Pandas, NumPy, Matplotlib, Seaborn…).</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fee2e2;color:#b91c1c;"><i class="fa-solid fa-chart-simple"></i></div>
+                            <div>
+                                <div class="tool-name">SAS</div>
+                                <p class="tool-desc">Logiciel statistique professionnel très utilisé dans les organismes publics et grandes entreprises pour le traitement de données massives et les enquêtes complexes.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BDD & ETL -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Bases de données & ETL</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#dcfce7;color:#15803d;"><i class="fa-solid fa-database"></i></div>
+                            <div>
+                                <div class="tool-name">SQL / MS Access</div>
+                                <p class="tool-desc">Langage de requêtage des bases de données relationnelles. MS Access est un SGBD de bureau permettant de créer et gérer des bases de données sans serveur dédié.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#dcfce7;color:#15803d;"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div>
+                                <div class="tool-name">Looping / IBEasy+</div>
+                                <p class="tool-desc">Outils de modélisation conceptuelle des données (MCD/MLD). Looping permet de dessiner des diagrammes entité-association et de générer le schéma relationnel associé.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#cffafe;color:#0e7490;"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+                            <div>
+                                <div class="tool-name">Talend</div>
+                                <p class="tool-desc">Plateforme d'intégration de données (ETL) permettant de concevoir des pipelines graphiques pour extraire, transformer et charger des données entre systèmes.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BUREAUTIQUE -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Bureautique & Tableur</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#dcfce7;color:#15803d;"><i class="fa-solid fa-file-excel"></i></div>
+                            <div>
+                                <div class="tool-name">Excel</div>
+                                <p class="tool-desc">Tableur de référence pour la gestion, la mise en forme et l'analyse de données, avec des fonctionnalités avancées (tableaux croisés dynamiques, graphiques, formules).</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#f3e8ff;color:#7c3aed;"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <div class="tool-name">VBA</div>
+                                <p class="tool-desc">Langage de macro-programmation intégré à Microsoft Office, permettant d'automatiser des tâches répétitives dans Excel, Access ou Word.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#dbeafe;color:#1d4ed8;"><i class="fa-solid fa-file-word"></i></div>
+                            <div>
+                                <div class="tool-name">Word</div>
+                                <p class="tool-desc">Traitement de texte permettant la rédaction et la mise en page professionnelle de rapports, documents et livrables structurés.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fee2e2;color:#b91c1c;"><i class="fa-solid fa-file-powerpoint"></i></div>
+                            <div>
+                                <div class="tool-name">PowerPoint</div>
+                                <p class="tool-desc">Logiciel de présentation permettant de créer des diaporamas visuels pour la restitution orale de résultats et de synthèses.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DATAVIZ -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Datavisualisation & Reporting</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fef3c7;color:#b45309;"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div>
+                                <div class="tool-name">Power BI</div>
+                                <p class="tool-desc">Outil de business intelligence de Microsoft permettant de connecter des sources de données, créer des rapports interactifs et partager des dashboards en ligne.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SIG -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Système d'Information Géographique</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#d1fae5;color:#065f46;"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <div class="tool-name">QGIS</div>
+                                <p class="tool-desc">Logiciel SIG open source permettant de visualiser, éditer et analyser des données géographiques, et de produire des cartes thématiques.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ENQUETES -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Collecte de données & Enquêtes</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#ede9fe;color:#6d28d9;"><i class="fa-solid fa-poll-h"></i></div>
+                            <div>
+                                <div class="tool-name">Sphinx</div>
+                                <p class="tool-desc">Logiciel spécialisé dans la conception de questionnaires d'enquête, la collecte des réponses et le dépouillement statistique des données recueillies.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WEB -->
+                <div class="tools-category">
+                    <div class="tools-category-title">Technologies Web</div>
+                    <div class="tools-grid">
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fff7ed;color:#c2410c;"><i class="fa-brands fa-html5"></i></div>
+                            <div>
+                                <div class="tool-name">HTML / CSS</div>
+                                <p class="tool-desc">Langages fondamentaux du web. HTML structure le contenu des pages, CSS gère leur mise en forme visuelle et leur mise en page responsive.</p>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon" style="background:#fef9c3;color:#a16207;"><i class="fa-brands fa-js"></i></div>
+                            <div>
+                                <div class="tool-name">JavaScript</div>
+                                <p class="tool-desc">Langage de programmation web côté navigateur permettant d'ajouter de l'interactivité, des animations et de la logique dynamique à une page HTML.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Victor Morvan. Étudiant BUT Science des Données.</p>
+        </div>
+    </footer>
+</body>
+</html>

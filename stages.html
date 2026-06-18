@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stage Statistique Canada - Victor Morvan">
+    <title>Stages & Expériences | Victor Morvan</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Styles spécifiques pour le système de dépliement */
+        .institution-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid #0f172a;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .toggle-btn {
+            background: none;
+            border: 2px solid var(--accent-red);
+            color: var(--accent-red);
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .toggle-btn:hover {
+            background: var(--accent-red);
+            color: white;
+        }
+        #full-details {
+            display: none; /* Caché par défaut */
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Image/photo.jpg" alt="Victor Morvan" class="header-photo">
+                Victor Morvan
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="traiter.html">Traiter</a></li>
+                    <li><a href="analyser.html">Analyser</a></li>
+                    <li><a href="valoriser.html">Valoriser</a></li>
+                    <li><a href="modeliser.html">Modéliser</a></li>
+                    
+                    <li><a href="perspectives.html">Perspectives</a></li>
+                    <li><a href="logiciels.html">Logiciels</a></li>
+                    <li><a href="projet.html">Projet Pro</a></li>
+                    <li><a href="stages.html" class="active-link">Stages</a></li>
+                    
+                    <li><a href="contact.html" class="btn-nav">Me Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="skill-hero">
+            <div class="container">
+                <span class="tagline">Expérience Internationale</span>
+                <h1>Stage à l'Étranger<br><span class="highlight">Statistique Canada (Ottawa)</span></h1>
+                <p class="skill-desc">
+                    Stage de fin de BUT 2e année. Immersion au sein de l'organisme national de statistique du Canada pour travailler sur des enjeux méthodologiques majeurs.
+                </p>
+            </div>
+        </section>
+
+        <section class="competence-section">
+            <div class="container">
+                
+                <div class="timeline">
+                    
+                    <article class="timeline-item">
+                        <div class="timeline-date">30 Mars - 19 Juin 2026 (10 semaines)</div>
+                        <div class="timeline-content project-card full-detail">
+                            
+                            <div class="card-top">
+                                <span class="badge red-badge">Ottawa, Canada</span>
+                                <span class="sae-ref">Statistique Canada</span>
+                            </div>
+                            <h3>Optimisation de l'Enquête sur la Population Active (EPA)</h3>
+
+                            <div class="institution-box" style="display:flex;align-items:center;gap:24px;">
+                                <img src="assets/Image/stat can/stats_can_photo.jpg" alt="Statistique Canada" style="width:110px;object-fit:contain;flex-shrink:0;border-radius:8px;">
+                                <div>
+                                    <h4><i class="fa-solid fa-building-columns"></i> L'Institution : Statistique Canada</h4>
+                                    <p style="font-size: 0.95rem; margin-top: 5px;">
+                                        Statistique Canada est l'organisme national de statistique du Canada (<strong>l'équivalent de l'INSEE en France</strong>). Il a pour mandat de produire des statistiques qui aident les Canadiens à mieux comprendre leur pays, sa population, ses ressources, son économie, sa société et sa culture.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="summary-content">
+                                <h4><i class="fa-solid fa-circle-info" style="color: var(--accent-red);"></i> Résumé du projet</h4>
+                                <p>
+                                    L’Enquête sur la population active (EPA) est l’une des enquêtes clés de Statistique Canada, produisant entre autres le taux de chômage, un indicateur économique majeur.
+                                    Le stage consiste à identifier les types de sources de données auxiliaires ayant le plus de potentiel pour <strong>minimiser l'erreur de non-réponse</strong> à l'enquête.
+                                </p>
+                            </div>
+
+                            <button onclick="toggleDescription()" id="toggleBtn" class="toggle-btn">
+                                Lire le descriptif complet <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <div id="full-details">
+
+                                <h4 style="margin-bottom:16px;margin-top:20px;"><i class="fa-solid fa-magnifying-glass-chart" style="color:var(--accent-red);margin-right:8px;"></i>L'EPA et la mesure de l'erreur de non-réponse</h4>
+
+                                <p style="font-size:.9rem;color:#475569;line-height:1.7;margin-bottom:16px;">
+                                    L'EPA est une enquête mensuelle à plan de sondage complexe produite auprès de dizaines de milliers de ménages canadiens. Elle génère les statistiques officielles du marché du travail, comme le taux de chômage. Depuis la pandémie, son taux de réponse a chuté de 87 % à environ 70 %, soulevant un risque d'erreur de non-réponse : les ménages qui refusent de participer présentent potentiellement des caractéristiques différentes, ce qui peut fausser les estimations.
+                                </p>
+
+                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
+                                    <div>
+                                        <p style="font-size:.8rem;color:#94a3b8;font-weight:600;text-align:center;margin-bottom:6px;">Taux de chômage par province (mars 2026)</p>
+                                        <img src="assets/Image/Stage/carte EPA.png" alt="Carte EPA taux de chômage" style="width:100%;border-radius:8px;border:1px solid #e2e8f0;">
+                                    </div>
+                                    <div>
+                                        <p style="font-size:.8rem;color:#94a3b8;font-weight:600;text-align:center;margin-bottom:6px;">Rotation mensuelle de l'échantillon EPA</p>
+                                        <img src="assets/Image/Stage/rotation.png" alt="Système de rotation EPA" style="width:100%;border-radius:8px;border:1px solid #e2e8f0;">
+                                    </div>
+                                </div>
+
+                                <p style="font-size:.9rem;color:#475569;line-height:1.7;margin-bottom:24px;">
+                                    La démarche repose sur un <strong>appariement entre les données de l'EPA et le Recensement</strong> (2016 et 2021). Un processus de calage séquentiel construit une source de référence à laquelle les estimations habituelles sont comparées. Deux estimateurs sont mobilisés : le <strong>GREG</strong> (Generalized Regression Estimator) et le <strong>RCE</strong> (Regression Composite Estimator), qui exploite le chevauchement entre mois consécutifs lié au système de rotation.
+                                </p>
+
+                                <hr style="margin:24px 0;border:none;border-top:1px solid #e2e8f0;">
+
+                                <h4 style="margin-bottom:16px;"><i class="fa-solid fa-list-check" style="color:var(--accent-red);margin-right:8px;"></i>Missions réalisées</h4>
+
+                                <div style="display:flex;flex-direction:column;gap:14px;">
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">1. Prise en main et analyse du code SAS existant</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Compréhension des programmes développés sur les données de 2021, identification de la structure du pipeline et substitution des références pour adapter le code aux données de 2016.</p>
+                                    </div>
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">2. Harmonisation des variables entre 2016 et 2021</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Mise en correspondance des variables des deux millésimes du Recensement et de l'EPA. Identification et traitement des principales différences de codification entre les deux années.</p>
+                                    </div>
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">3. Tableau de suivi des flux de données</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Création d'un tableau documentant l'ensemble du pipeline de traitement : fichiers d'entrée, sorties intermédiaires et finales, avec description du rôle de chaque programme.</p>
+                                        <div style="margin-top:10px;"><img src="assets/Image/Stage/excel.png" alt="Tableau de suivi des flux" style="width:100%;border-radius:6px;border:1px solid #e2e8f0;"></div>
+                                    </div>
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">4. Manuel technique et dictionnaire de données</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Rédaction d'une documentation technique complète décrivant chaque variable, sa position et ses modalités dans les fichiers sources, pour assurer la maintenabilité du projet.</p>
+                                        <div style="margin-top:10px;"><img src="assets/Image/Stage/dico.png" alt="Extrait du dictionnaire de données" style="width:100%;border-radius:6px;border:1px solid #e2e8f0;"></div>
+                                    </div>
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">5. Exécution des programmes et gestion des anomalies</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Lancement séquentiel des programmes SAS, contrôle des sorties et résolution d'anomalies techniques : pondérations nulles en Alberta, problèmes de convergence du calage, erreurs dans le programme de calage du Recensement long.</p>
+                                    </div>
+
+                                    <div style="background:#f8fafc;border-radius:10px;padding:16px 18px;border-left:4px solid #1e3a5f;">
+                                        <strong style="color:#1e3a5f;display:block;margin-bottom:4px;">6. Analyse comparative et expérimentation de variables auxiliaires</strong>
+                                        <p style="margin:0;font-size:.88rem;color:#475569;">Comparaison de l'erreur de non-réponse entre 2016 et 2021 à l'aide des estimateurs GREG et RCE. Expérimentation de nouvelles variables auxiliaires pour améliorer l'ajustement des poids.</p>
+                                        <div style="margin-top:10px;">
+                                            <p style="font-size:.8rem;color:#94a3b8;font-weight:600;text-align:center;margin-bottom:6px;">Exemple de sortie, intervalles d'erreur relative par groupe âge/sexe</p>
+                                            <img src="assets/Image/Stage/exemple_output.png" alt="Exemple de sortie intervalles erreur relative" style="width:100%;border-radius:6px;border:1px solid #e2e8f0;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <hr style="margin:24px 0;border:none;border-top:1px solid #e2e8f0;">
+
+                            <h4 style="margin-bottom:16px;"><i class="fa-solid fa-graduation-cap" style="color:var(--accent-red);margin-right:8px;"></i>Compétences du programme national mobilisées</h4>
+
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px;">
+
+                                <div style="background:#eff6ff;border-radius:12px;padding:18px;border-top:3px solid #1d4ed8;">
+                                    <div style="font-weight:700;color:#1d4ed8;font-size:.88rem;margin-bottom:10px;"><i class="fa-solid fa-database" style="margin-right:6px;"></i>Traiter</div>
+                                    <ul style="margin:0;padding-left:16px;font-size:.82rem;color:#334155;line-height:1.7;">
+                                        <li>Intégrer des sources de données hétérogènes, à travers l'appariement EPA et Recensement (2016 et 2021)</li>
+                                        <li>Tester, corriger et documenter, gestion des anomalies SAS et rédaction du manuel technique</li>
+                                        <li>Maîtriser un pipeline de traitement complexe à position fixe</li>
+                                    </ul>
+                                </div>
+
+                                <div style="background:#fef3c7;border-radius:12px;padding:18px;border-top:3px solid #b45309;">
+                                    <div style="font-weight:700;color:#b45309;font-size:.88rem;margin-bottom:10px;"><i class="fa-solid fa-chart-line" style="margin-right:6px;"></i>Analyser</div>
+                                    <ul style="margin:0;padding-left:16px;font-size:.82rem;color:#334155;line-height:1.7;">
+                                        <li>Comprendre la différence entre estimateurs, comparaison entre estimateur GREG et RCE selon le contexte</li>
+                                        <li>Analyser l'évolution temporelle de l'erreur de non-réponse entre 2016 et 2021</li>
+                                        <li>Apprécier les limites de validité, évaluation des variables auxiliaires</li>
+                                    </ul>
+                                </div>
+
+                                <div style="background:#f0fdf4;border-radius:12px;padding:18px;border-top:3px solid #15803d;">
+                                    <div style="font-weight:700;color:#15803d;font-size:.88rem;margin-bottom:10px;"><i class="fa-solid fa-display" style="margin-right:6px;"></i>Valoriser</div>
+                                    <ul style="margin:0;padding-left:16px;font-size:.82rem;color:#334155;line-height:1.7;">
+                                        <li>Rédiger une documentation professionnelle rigoureuse, avec rédaction du dictionnaire de données et du manuel technique</li>
+                                        <li>Adopter une posture professionnelle en milieu bilingue et institutionnel</li>
+                                        <li>Communiquer et collaborer au sein d'une équipe de méthodologistes</li>
+                                    </ul>
+                                </div>
+
+                                <div style="background:#ede9fe;border-radius:12px;padding:18px;border-top:3px solid #6d28d9;">
+                                    <div style="font-weight:700;color:#6d28d9;font-size:.88rem;margin-bottom:10px;"><i class="fa-solid fa-brain" style="margin-right:6px;"></i>Modéliser (EMS)</div>
+                                    <ul style="margin:0;padding-left:16px;font-size:.82rem;color:#334155;line-height:1.7;">
+                                        <li>Appréhender un plan de sondage complexe, avec l'EPA à deux degrés et son système de rotation</li>
+                                        <li>Mettre en œuvre un processus de calage séquentiel pour corriger la non-réponse</li>
+                                        <li>Expérimenter des variables auxiliaires alternatives pour optimiser l'ajustement</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div style="background:#f1f5f9;border-radius:10px;padding:16px 18px;margin-top:8px;">
+                                <div style="font-size:.83rem;font-weight:700;color:#0f172a;margin-bottom:10px;"><i class="fa-solid fa-screwdriver-wrench" style="margin-right:6px;color:#64748b;"></i>Outils & méthodes statistiques mobilisés</div>
+                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                                    <div>
+                                        <div style="font-size:.75rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Logiciels</div>
+                                        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                                            <span style="background:#dbeafe;color:#1d4ed8;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">SAS</span>
+                                            <span style="background:#dbeafe;color:#1d4ed8;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">R / RStudio</span>
+                                            <span style="background:#dcfce7;color:#15803d;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">Excel</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="font-size:.75rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Méthodes statistiques</div>
+                                        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                                            <span style="background:#f3e8ff;color:#6d28d9;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">Calage séquentiel</span>
+                                            <span style="background:#f3e8ff;color:#6d28d9;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">GREG & RCE</span>
+                                            <span style="background:#f3e8ff;color:#6d28d9;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">Bootstrap</span>
+                                            <span style="background:#f3e8ff;color:#6d28d9;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">Appariement</span>
+                                            <span style="background:#f3e8ff;color:#6d28d9;font-size:.78rem;padding:3px 10px;border-radius:20px;font-weight:600;">Plan de sondage complexe</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="nav-footer-section">
+            <div class="container">
+                <a href="contact.html" class="btn btn-primary">
+                    Me Contacter <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+            <p>&copy; 2026 Victor Morvan. Étudiant BUT Science des Données.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDescription() {
+            var content = document.getElementById("full-details");
+            var btn = document.getElementById("toggleBtn");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                btn.innerHTML = 'Lire le descriptif complet <i class="fa-solid fa-chevron-down"></i>';
+            } else {
+                content.style.display = "block";
+                btn.innerHTML = 'Réduire le descriptif <i class="fa-solid fa-chevron-up"></i>';
+            }
+        }
+    </script>
+
+</body>
+</html>

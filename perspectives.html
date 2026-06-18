@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspectives BUT 3 | Victor Morvan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .persp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 36px;
+        }
+        .persp-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px 26px;
+            box-shadow: 0 2px 10px rgba(15,23,42,.05);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .persp-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(15,23,42,.1); }
+        .persp-card-header {
+            display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+        }
+        .persp-icon {
+            width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+        .persp-bc { font-size: .7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #94a3b8; display: block; margin-bottom: 2px; }
+        .persp-title { font-size: 1rem; font-weight: 700; color: #0f172a; margin: 0; }
+        .persp-desc { font-size: .87rem; color: #475569; line-height: 1.65; margin-bottom: 16px; }
+        .persp-sae-list { display: flex; flex-direction: column; gap: 8px; }
+        .persp-sae {
+            display: flex; align-items: flex-start; gap: 10px;
+            background: #f8fafc; border-radius: 10px; padding: 10px 14px;
+            font-size: .83rem;
+        }
+        .persp-sae i { color: #6366f1; margin-top: 2px; flex-shrink: 0; }
+        .persp-sae strong { color: #1e3a5f; display: block; margin-bottom: 2px; }
+        .persp-sae span { color: #64748b; }
+
+        .alternance-band {
+            margin-top: 40px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            border-radius: 18px; padding: 36px;
+            color: white; display: flex; gap: 32px; align-items: center;
+        }
+        .alternance-icon {
+            width: 72px; height: 72px; flex-shrink: 0;
+            background: rgba(255,255,255,.12); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 2rem;
+        }
+        .alternance-content h3 { font-size: 1.2rem; margin: 0 0 8px; }
+        .alternance-content p { font-size: .9rem; opacity: .85; line-height: 1.7; margin: 0; }
+        .alternance-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+        .alternance-tag {
+            background: rgba(255,255,255,.12); border-radius: 20px;
+            padding: 5px 14px; font-size: .8rem; font-weight: 600; color: #bfdbfe;
+        }
+
+        @media (max-width: 768px) {
+            .persp-grid { grid-template-columns: 1fr; }
+            .alternance-band { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Image/photo.jpg" alt="Victor Morvan" class="header-photo">
+                Victor Morvan
+            </a>
+            <nav><ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="traiter.html">Traiter</a></li>
+                <li><a href="analyser.html">Analyser</a></li>
+                <li><a href="valoriser.html">Valoriser</a></li>
+                <li><a href="modeliser.html">Modéliser</a></li>
+                <li><a href="perspectives.html" class="active-link">Perspectives</a></li>
+                <li><a href="logiciels.html">Logiciels</a></li>
+                <li><a href="projet.html">Projet Pro</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="contact.html" class="btn-nav">Me Contacter</a></li>
+            </ul></nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="skill-hero">
+            <div class="container">
+                <span class="tagline">Projection · BUT 3, Semestre 5 & 6</span>
+                <h1>Perspectives<br><span class="highlight">pour la 3ème année</span></h1>
+                <p class="skill-desc">
+                    Fort des compétences acquises en BUT 1 et 2, voici les axes que je souhaite approfondir en troisième année, les SAÉ qui vont me permettre de les développer et la place centrale de l'alternance dans cette progression.
+                </p>
+            </div>
+        </section>
+
+        <section class="competence-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Programme de 3ème année</h2>
+                    <p class="subtitle">Matières et SAÉ au programme du BUT 3</p>
+                </header>
+
+                <div class="persp-grid">
+
+                    <!--  TRAITER -->
+                    <div class="persp-card">
+                        <div class="persp-card-header">
+                            <div class="persp-icon" style="background:#dbeafe;color:#1d4ed8;">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div>
+                                <span class="persp-bc">Traiter</span>
+                                <h3 class="persp-title">Données complexes & nouvelles architectures</h3>
+                            </div>
+                        </div>
+                        <p class="persp-desc">
+                            En BUT 2, j'ai maîtrisé les bases de données relationnelles et les pipelines ETL classiques. En BUT 3, je souhaite aller vers des données plus complexes et des architectures modernes, notamment les environnements NoSQL et les flux de données massives.
+                        </p>
+                        <div class="persp-sae-list">
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-book"></i>
+                                <div>
+                                    <strong>Matière : Bases de données avancées & NoSQL</strong>
+                                    <span>Étude des systèmes non relationnels (orientés documents, clé-valeur, graphes), spécificités des données complexes et non structurées.</span>
+                                </div>
+                            </div>
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div>
+                                    <strong>SAÉ 5.02 : Migration vers un environnement NoSQL</strong>
+                                    <span>Mise en pratique sur un cas réel : migration depuis un système relationnel, gestion et requêtage de données non structurées.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  ANALYSER -->
+                    <div class="persp-card">
+                        <div class="persp-card-header">
+                            <div class="persp-icon" style="background:#fef3c7;color:#b45309;">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <span class="persp-bc">Analyser</span>
+                                <h3 class="persp-title">Datamining & apprentissage statistique</h3>
+                            </div>
+                        </div>
+                        <p class="persp-desc">
+                            J'ai posé les bases de l'analyse exploratoire et des méthodes factorielles en BUT 2. Je veux désormais approfondir les méthodes de datamining et d'apprentissage statistique supervisé pour aller vers des modèles prédictifs plus puissants.
+                        </p>
+                        <div class="persp-sae-list">
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-book"></i>
+                                <div>
+                                    <strong>Matière : Datamining & apprentissage statistique</strong>
+                                    <span>Classification supervisée et non supervisée, arbres de décision, forêts aléatoires, SVM, évaluation des modèles (validation croisée, courbe ROC).</span>
+                                </div>
+                            </div>
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div>
+                                    <strong>SAÉ 5.03 : Mise en oeuvre d'un processus de Datamining</strong>
+                                    <span>Application sur données réelles : sélection des variables, choix du modèle, optimisation et interprétation des résultats.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  MODÉLISER -->
+                    <div class="persp-card">
+                        <div class="persp-card-header">
+                            <div class="persp-icon" style="background:#ede9fe;color:#6d28d9;">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <span class="persp-bc">Modéliser</span>
+                                <h3 class="persp-title">Modélisation statistique avancée</h3>
+                            </div>
+                        </div>
+                        <p class="persp-desc">
+                            La régression linéaire et les séries temporelles m'ont donné de solides bases en modélisation. En BUT 3, je veux aller vers des modèles plus complexes adaptés à des domaines spécifiques, notamment dans le contexte sportif.
+                        </p>
+                        <div class="persp-sae-list">
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-book"></i>
+                                <div>
+                                    <strong>Matière : Modélisation statistique avancée</strong>
+                                    <span>Modèles adaptés à des domaines spécifiques (marketing, biostatistique, statistique spatiale), méthodes de sélection de variables, modèles mixtes.</span>
+                                </div>
+                            </div>
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div>
+                                    <strong>SAÉ 5.EMS.01 : Mener une étude statistique complète</strong>
+                                    <span>Étude de A à Z sur données réelles : collecte, modélisation avancée, validation et restitution à un commanditaire.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  VALORISER -->
+                    <div class="persp-card">
+                        <div class="persp-card-header">
+                            <div class="persp-icon" style="background:#dcfce7;color:#15803d;">
+                                <i class="fa-solid fa-display"></i>
+                            </div>
+                            <div>
+                                <span class="persp-bc">Valoriser</span>
+                                <h3 class="persp-title">Restitution professionnelle & posture experte</h3>
+                            </div>
+                        </div>
+                        <p class="persp-desc">
+                            Communiquer des résultats statistiques à un public non-expert est une compétence que je veux continuer à affiner. L'enjeu en BUT 3 est de développer une vraie posture de consultant : défendre ses choix, convaincre, s'adapter à l'interlocuteur.
+                        </p>
+                        <div class="persp-sae-list">
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-book"></i>
+                                <div>
+                                    <strong>Matière : Reporting avancé & communication professionnelle</strong>
+                                    <span>Tableaux de bord avancés, storytelling avec la donnée, adaptation du discours selon l'interlocuteur, enjeux RGPD et déontologie.</span>
+                                </div>
+                            </div>
+                            <div class="persp-sae">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div>
+                                    <strong>SAÉ 5.EMS.01 : Étude statistique avec restitution commanditaire</strong>
+                                    <span>Production d'un livrable professionnel complet et soutenance devant un commanditaire réel.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ALTERNANCE BAND -->
+                <div class="alternance-band">
+                    <div class="alternance-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="alternance-content">
+                        <h3>L'alternance au cœur de la progression</h3>
+                        <p>
+                            Le BUT 3 s'organise autour d'une alternance de 12 mois, qui sera pour moi l'occasion de mobiliser et approfondir toutes les compétences acquises sur des problématiques réelles. Je vise une alternance dans le domaine du sport data, au sein d'un club, d'une fédération ou d'une agence de statistiques, pour combiner progression technique et confirmation de mon projet professionnel.
+                        </p>
+                        <div class="alternance-tags">
+                            <span class="alternance-tag"><i class="fa-solid fa-futbol"></i> Sport Data</span>
+                            <span class="alternance-tag">12 mois</span>
+                            <span class="alternance-tag">Modélisation avancée</span>
+                            <span class="alternance-tag">Restitution professionnelle</span>
+                            <span class="alternance-tag">Datamining</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="nav-footer-section">
+            <div class="container">
+                <a href="logiciels.html" class="btn btn-outline dark-btn">
+                    Voir mes logiciels <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/victor-morvan-86844a330/" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Victor Morvan. Étudiant BUT Science des Données.</p>
+        </div>
+    </footer>
+</body>
+</html>

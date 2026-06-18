@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traiter | Victor Morvan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Image/photo.jpg" alt="Victor Morvan" class="header-photo">
+                Victor Morvan
+            </a>
+            <nav><ul class="nav-links"><li><a href="index.html">Accueil</a></li><li><a href="traiter.html"  class="active-link">Traiter</a></li><li><a href="analyser.html">Analyser</a></li><li><a href="valoriser.html">Valoriser</a></li><li><a href="modeliser.html">Modéliser</a></li><li><a href="perspectives.html">Perspectives</a></li>
+                    <li><a href="logiciels.html">Logiciels</a></li>
+                    <li><a href="projet.html">Projet Pro</a></li><li><a href="stages.html">Stages</a></li><li><a href="contact.html" class="btn-nav">Me Contacter</a></li></ul></nav>
+        </div>
+    </header>
+    <main>
+        <section class="skill-hero">
+            <div class="container">
+                <span class="tagline">Compétence · Traiter</span>
+                <h1>Traiter</h1>
+                <p class="skill-desc">Avant toute analyse, la donnée doit être collectée, structurée et stockée de manière fiable. Ce bloc couvre la maîtrise des bases de données relationnelles, les architectures décisionnelles (datawarehouse, ETL) et les processus d'intégration des données.</p>
+                <div class="ac-overview-grid">
+                    <div class="ac-overview-col">
+                        <span class="ac-overview-level">Fondamentaux · BUT 1</span>
+                        <div class="ac-overview-list"><span class="ac-pill ac-pill-s1">Analyse du besoin</span><span class="ac-pill ac-pill-s1">Modélisation MCD</span><span class="ac-pill ac-pill-s1">SQL et requêtes</span><span class="ac-pill ac-pill-s1">Structure des données</span><span class="ac-pill ac-pill-s1">Algorithmique</span></div>
+                    </div>
+                    <div class="ac-overview-col">
+                        <span class="ac-overview-level">Avancé · BUT 2</span>
+                        <div class="ac-overview-list"><span class="ac-pill ac-pill-s2">Architecture décisionnelle</span><span class="ac-pill ac-pill-s2">ETL et pipeline</span><span class="ac-pill ac-pill-s2">BDD complexes</span><span class="ac-pill ac-pill-s2">Automatisation</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container sae-page-container">
+
+        <div class="sem-group">
+            <button class="sem-toggle" data-target="sem-2-traiter"
+                    style="--sem-color:#1d4ed8;--sem-bg:#bfdbfe;"
+                    aria-expanded="true">
+                <span class="sem-toggle-label">
+                    <span class="sem-badge-pill" style="background:#bfdbfe;color:#1d4ed8;">S2</span>
+                    Semestre 2 — BUT 1
+                </span>
+                <i class="fa-solid fa-chevron-up sem-toggle-icon"></i>
+            </button>
+            <div class="sem-content" id="sem-2-traiter">
+                <div class="sem-cards-inner">
+                <article class="sae-card-full" id="sae-201">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 2.01</span>
+                            <span class="sae-sem-badge sem-s2">Semestre 2</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-201','201')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <h3 class="sae-card-title">Conception et implémentation d'une base de données — Cas CompuDistri</h3>
+                    <p class="sae-card-context">Conception et implémentation d'une base de données relationnelle pour le cas métier <strong>CompuDistri</strong>, une entreprise de distribution informatique. Cycle complet : dictionnaire de données (code, libellé, nature, stabilité, domaine, commentaire), dépendances fonctionnelles, MCD sur Looping et IBEasy+, intégration MS Access via VBA et rédaction de <strong>42 requêtes SQL</strong>.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Analyser et formaliser un besoin client</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Créer un dictionnaire de données structuré</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Modéliser les dépendances fonctionnelles</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Concevoir un MCD (entités, associations, cardinalités)</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Implémenter une base de données dans MS Access</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Rédiger des requêtes SQL complexes (jointures, sous-requêtes, agrégats)</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-solid diagram-project"></i> Looping</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid database"></i> IBEasy+</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid table"></i> MS Access</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid code"></i> SQL — 42 requêtes</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid file-excel"></i> Excel</span></span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-regular fa-image"></i> Captures du projet</span>
+                        <div class="captures-grid"><div class="capture-slot"><img src="assets/Image/sae 201/dictionnaire.png" alt="Dictionnaire des données CompuDistri"></div><div class="capture-slot"><img src="assets/Image/sae 201/looping.png" alt="MCD Looping CompuDistri"></div><div class="capture-slot"><img src="assets/Image/sae 201/MCD.png" alt="MCD IBEasy+ CompuDistri"></div></div>
+                    </div>
+                </article>
+                <article class="sae-card-full" id="sae-204">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 2.04</span>
+                            <span class="sae-sem-badge sem-s2">Semestre 2</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span><span class="bloc-mini bloc-analyser-mini"><i class="fa-solid fa-chart-line"></i> Analyser</span><span class="bloc-mini bloc-valoriser-mini"><i class="fa-solid fa-display"></i> Valoriser</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-204','204')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <div class="sae-also-in">
+                        <span><i class="fa-solid fa-link"></i> Aussi présente dans :</span>
+                        <a href="analyser.html" class="also-in-link"><i class="fa-solid fa-chart-line"></i> Analyser</a><a href="valoriser.html" class="also-in-link"><i class="fa-solid fa-display"></i> Valoriser</a>
+                    </div>
+                    <h3 class="sae-card-title">Datavisualisation</h3>
+                    <p class="sae-card-context">À partir d'un jeu de données complexe, concevoir des visualisations pertinentes et lisibles adaptées à un public non-expert, en justifiant chaque choix graphique. Le projet couvre la collecte, la préparation, l'analyse et la restitution visuelle des données.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Collecter et identifier les structures de données exploitables</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Nettoyer et transformer les données pour les outils de visualisation</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Structurer un pipeline de préparation des données</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-brands python"></i> Python (Pandas)</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid file-csv"></i> CSV / JSON</span></span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-regular fa-image"></i> Captures du projet</span>
+                        <div class="captures-grid"><div class="capture-slot"><img src="assets/Image/sae 204/sae 204.png" alt="Poster Challenge INSEE 2025 — IPS et niveau d'études"></div></div>
+                    </div>
+                </article>
+                <article class="sae-card-full" id="sae-206">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 2.06</span>
+                            <span class="sae-sem-badge sem-s2">Semestre 2</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span><span class="bloc-mini bloc-analyser-mini"><i class="fa-solid fa-chart-line"></i> Analyser</span><span class="bloc-mini bloc-valoriser-mini"><i class="fa-solid fa-display"></i> Valoriser</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-206','206')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <div class="sae-also-in">
+                        <span><i class="fa-solid fa-link"></i> Aussi présente dans :</span>
+                        <a href="analyser.html" class="also-in-link"><i class="fa-solid fa-chart-line"></i> Analyser</a><a href="valoriser.html" class="also-in-link"><i class="fa-solid fa-display"></i> Valoriser</a>
+                    </div>
+                    <h3 class="sae-card-title">Analyse de données, reporting et datavisualisation</h3>
+                    <p class="sae-card-context">SAÉ transversale mobilisant l'ensemble des compétences du BUT1. Étude complète sur un jeu de données réel : collecte, traitement, analyse statistique et restitution via un rapport structuré et des visualisations adaptées.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Mettre en place un pipeline de traitement en Python</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Lire et écrire des fichiers CSV/JSON, nettoyer les données</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Automatiser les étapes de transformation</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-brands python"></i> Python (Pandas, NumPy)</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid file-excel"></i> CSV / Excel</span></span></div>
+                    </div>
+                    <div class="sae-section"><span class="sae-section-label"><i class="fa-regular fa-image"></i> Captures du projet</span><div class="captures-grid"><div class="capture-slot"><img src="assets/Image/sae 206/sae 206 1.png" alt="Carnets bord BreizhGo 2023"></div><div class="capture-slot"><img src="assets/Image/sae 206/sae 206 2.png" alt="Bouee Candhis Belle-Ile"></div><div class="capture-slot"><img src="assets/Image/sae 206/sae 206 3.png" alt="Windguru HTML direction vent"></div><div class="capture-slot"><img src="assets/Image/sae 206/sae 206 6.png" alt="Code Python extraction degres"></div></div><div style="margin-top:10px;padding:12px;background:#f8fafc;border-radius:8px;border:1px dashed #cbd5e1;display:flex;align-items:center;gap:10px;"><i class="fa-solid fa-lock" style="color:#94a3b8;"></i><p style="margin:0;color:#94a3b8;font-size:.82rem;">Resultats confidentiels - Region Bretagne.</p></div></div>
+                </article>
+                </div>
+            </div>
+        </div>
+        <div class="sem-group">
+            <button class="sem-toggle" data-target="sem-3-traiter"
+                    style="--sem-color:#065f46;--sem-bg:#d1fae5;"
+                    aria-expanded="true">
+                <span class="sem-toggle-label">
+                    <span class="sem-badge-pill" style="background:#d1fae5;color:#065f46;">S3</span>
+                    Semestre 3 — BUT 2
+                </span>
+                <i class="fa-solid fa-chevron-up sem-toggle-icon"></i>
+            </button>
+            <div class="sem-content" id="sem-3-traiter">
+                <div class="sem-cards-inner">
+                <article class="sae-card-full" id="sae-301">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 3.EMS.01</span>
+                            <span class="sae-sem-badge sem-s3">Semestre 3</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span><span class="bloc-mini bloc-analyser-mini"><i class="fa-solid fa-chart-line"></i> Analyser</span><span class="bloc-mini bloc-valoriser-mini"><i class="fa-solid fa-display"></i> Valoriser</span><span class="bloc-mini bloc-modeliser-mini"><i class="fa-solid fa-infinity"></i> Modéliser</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-301','301')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <div class="sae-also-in">
+                        <span><i class="fa-solid fa-link"></i> Aussi présente dans :</span>
+                        <a href="analyser.html" class="also-in-link"><i class="fa-solid fa-chart-line"></i> Analyser</a><a href="valoriser.html" class="also-in-link"><i class="fa-solid fa-display"></i> Valoriser</a><a href="modeliser.html" class="also-in-link"><i class="fa-solid fa-infinity"></i> Modéliser</a>
+                    </div>
+                    <h3 class="sae-card-title">Recueil et analyse de données par échantillonnage ou plan d'expérience</h3>
+                    <p class="sae-card-context">SAÉ phare du parcours EMS : démarche statistique complète autour d'un plan d'échantillonnage ou d'expérience réel. Du protocole de collecte jusqu'à la restitution des résultats, en passant par la modélisation statistique.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Définir le protocole de collecte et les variables mesurées</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Structurer la base de données d'expérience</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Contrôler la qualité des données recueillies</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-solid r-project"></i> R</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-brands python"></i> Python</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid file-csv"></i> CSV structurés</span></span></div>
+                    </div>
+                    <div class="sae-section">
+    <span class="sae-section-label"><i class="fa-regular fa-image"></i> Documents du projet</span>
+    <div style="padding:16px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+      <i class="fa-solid fa-file-lines" style="color:#3b82f6;font-size:1.2rem;flex-shrink:0;"></i>
+      <div>
+        <p style="margin:0 0 4px;font-weight:600;color:#475569;font-size:.88rem;">Rapports ecrits uniquement</p>
+        <p style="margin:0;color:#94a3b8;font-size:.82rem;">Ce projet ne comporte pas de captures visuelles - les livrables sont des rapports PDF.</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="assets/Docs/sae 301/valpena.pdf" target="_blank" class="btn-download-sae"><i class="fa-solid fa-file-pdf"></i> Rapport VALPENA</a>
+      <a href="assets/Docs/sae 301/stat can.pdf" target="_blank" class="btn-download-sae"><i class="fa-solid fa-file-pdf"></i> Synthese article Stat Canada</a>
+    </div>
+  </div>
+                </article>
+                <article class="sae-card-full" id="sae-302">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 3.02</span>
+                            <span class="sae-sem-badge sem-s3">Semestre 3</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span><span class="bloc-mini bloc-valoriser-mini"><i class="fa-solid fa-display"></i> Valoriser</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-302','302')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <div class="sae-also-in">
+                        <span><i class="fa-solid fa-link"></i> Aussi présente dans :</span>
+                        <a href="valoriser.html" class="also-in-link"><i class="fa-solid fa-display"></i> Valoriser</a>
+                    </div>
+                    <h3 class="sae-card-title">Intégration de données dans un datawarehouse avec Talend</h3>
+                    <p class="sae-card-context">Conception et alimentation d'un entrepôt de données à partir de sources hétérogènes via <strong>Talend Open Studio for Data Integration</strong>. Jobs ETL pour le chargement des tables de dimension avec gestion des doublons par lookup et transformation via le composant tMap.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Concevoir un schéma en étoile (tables de faits et dimensions)</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Construire un pipeline ETL complet (extraction, transformation, chargement)</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Intégrer des sources de données hétérogènes</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Gérer les doublons et les identifiants de substitution (tAggregateRow)</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Automatiser les traitements ETL</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-solid bolt"></i> Talend Open Studio</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid rotate"></i> ETL</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid star"></i> Schéma en étoile</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid arrows-turn-right"></i> tMap</span></span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-regular fa-image"></i> Captures du projet</span>
+                        <div class="captures-grid"><div class="capture-slot"><img src="assets/Image/sae 302/ETL.png" alt="Job ETL Talend — chargement DIM_CLIENTS"></div><div class="capture-slot"><img src="assets/Image/sae 302/tMap.png" alt="Transformation tMap — jointures et mapping"></div></div>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </div>
+        <div class="sem-group">
+            <button class="sem-toggle" data-target="sem-4-traiter"
+                    style="--sem-color:#064e3b;--sem-bg:#a7f3d0;"
+                    aria-expanded="true">
+                <span class="sem-toggle-label">
+                    <span class="sem-badge-pill" style="background:#a7f3d0;color:#064e3b;">S4</span>
+                    Semestre 4 — BUT 2
+                </span>
+                <i class="fa-solid fa-chevron-up sem-toggle-icon"></i>
+            </button>
+            <div class="sem-content" id="sem-4-traiter">
+                <div class="sem-cards-inner">
+                <article class="sae-card-full" id="sae-402">
+                    <div class="sae-card-header">
+                        <div class="sae-card-header-left">
+                            <span class="sae-code-badge">SAÉ 4.02</span>
+                            <span class="sae-sem-badge sem-s4">Semestre 4</span>
+                            <div class="sae-blocs-mini"><span class="bloc-mini bloc-traiter-mini"><i class="fa-solid fa-database"></i> Traiter</span><span class="bloc-mini bloc-analyser-mini"><i class="fa-solid fa-chart-line"></i> Analyser</span><span class="bloc-mini bloc-valoriser-mini"><i class="fa-solid fa-display"></i> Valoriser</span></div>
+                        </div>
+                        <button class="btn-modal-open" onclick="openSAEModal('sae-402','402')">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Fiche complète
+                        </button>
+                    </div>
+                    <div class="sae-also-in">
+                        <span><i class="fa-solid fa-link"></i> Aussi présente dans :</span>
+                        <a href="analyser.html" class="also-in-link"><i class="fa-solid fa-chart-line"></i> Analyser</a><a href="valoriser.html" class="also-in-link"><i class="fa-solid fa-display"></i> Valoriser</a>
+                    </div>
+                    <h3 class="sae-card-title">Reporting d'une analyse multivariée</h3>
+                    <p class="sae-card-context">Mise en oeuvre de méthodes factorielles (ACP) et de classification automatique (CAH, K-Means) pour extraire des profils types dans un jeu de données complexe. Production d'un rapport de data mining complet avec recommandations business.</p>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-graduation-cap"></i> Compétences développées</span>
+                        <div class="competences-list"><span class="competence-tag"><i class="fa-solid fa-check"></i> Préparer un jeu de données multidimensionnel en R</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Gérer les données manquantes, recoder et normaliser les variables</span><span class="competence-tag"><i class="fa-solid fa-check"></i> Automatiser le pipeline de traitement pour la reproductibilité</span></div>
+                    </div>
+                    <div class="sae-section">
+                        <span class="sae-section-label"><i class="fa-solid fa-screwdriver-wrench"></i> Logiciels et outils utilisés</span>
+                        <div class="outils-list"><span class="outil-tag"><span class="outil-tag"><i class="fa-solid r-project"></i> R (tidyverse, dplyr)</span></span><span class="outil-tag"><span class="outil-tag"><i class="fa-solid rotate"></i> Normalisation / recodage</span></span></div>
+                    </div>
+                    <div class="sae-section"><span class="sae-section-label"><i class="fa-regular fa-image"></i> Captures du projet</span><div class="captures-grid"><div class="capture-slot"><img src="assets/Image/sae 402/sae 402 1.png" alt="Exploration donnees 819 joueurs FPL"></div><div class="capture-slot"><img src="assets/Image/sae 402/sae 402 2.png" alt="Dictionnaire donnees FPL bilingue"></div></div></div>
+                </article>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <section class="nav-footer-section">
+            <div class="container nav-footer-flex">
+                <a href="analyser.html" class="btn btn-outline dark-btn"><i class="fa-solid fa-arrow-left"></i> Analyser</a>
+                <a href="valoriser.html" class="btn btn-outline dark-btn">Valoriser <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer><div class="container footer-content">
+        <div class="social-links"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a><a href="#" target="_blank">GitHub</a></div>
+        <p>&copy; 2026 Victor Morvan. Étudiant BUT Science des Données.</p>
+    </div></footer>
+    <script>
+    document.querySelectorAll('.sem-toggle').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var id = this.dataset.target;
+            var content = document.getElementById(id);
+            var isOpen = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isOpen);
+            content.classList.toggle('collapsed', isOpen);
+            this.querySelector('.sem-toggle-icon').style.transform = isOpen ? 'rotate(180deg)' : '';
+        });
+    });
+    </script>
+<script id="sae-extra-data">
+window.SAE_EXTRA = {
+  "sae-201": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> La base de données est l\u0027outil au centre du processus décisionnel. Savoir mettre en place une base de données relationnelle est essentiel dans les métiers de la donnée.</p><p><strong>Objectifs :</strong></p><ul><li>Engager l\u0027étudiant dans une démarche de création d\u0027une base de données relationnelle</li><li>Lui faire comprendre que cette démarche implique toutes les étapes : analyse des besoins, modélisation, implémentation, alimentation, validation, documentation</li></ul>"},
+    {title: "Contexte", content: "Mise en situation professionnelle autour du cas <strong>CompuDistri</strong>, entreprise fictive de distribution informatique. Conception et implementation d une base de donnees relationnelle complete, du MCD jusqu a l exploitation SQL sous MySQL."},
+    {title: "Demarche", content: "<p><strong>Dictionnaire des donnees</strong> — identification des entites (produits, clients, commandes, fournisseurs).</p><p><strong>Looping / MCD</strong> — modelisation conceptuelle, associations et cardinalites.</p><p><strong>MLD et MPD</strong> — passage au modele logique et physique, normalisation 3FN.</p><p><strong>Implementation MySQL</strong> — creation tables, contraintes, cles etrangeres.</p><p><strong>Requetes SQL</strong> — jointures, agregations, sous-requetes.</p>"},
+    {title: "Livrables", content: "Rapport avec dictionnaire, schemas MCD/MLD, script SQL et jeu de test. Binome avec Nathan Simon."},
+  ],
+  "sae-204": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> La datavisualisation présente les données de manière visuelle pour faire ressortir les éléments clés, les tendances et les liaisons. C\u0027est un mode de diffusion de l\u0027information très utilisé dans tous les métiers de la donnée.</p><p><strong>Objectifs :</strong></p><ul><li>Comprendre la démarche de valorisation des éléments clés d\u0027un tableau de données par la représentation graphique</li><li>Choisir et construire des indicateurs synthétiques pertinents pour répondre à une problématique</li><li>Savoir identifier les atouts et faiblesses des différentes représentations graphiques</li></ul>"},
+    {title: "Contexte", content: "Challenge de datavisualisation : a partir d un jeu de donnees reel impose en temps limite, produire des visualisations percutantes pour un public non-expert. Chaque choix graphique devait etre justifie methodologiquement."},
+    {title: "Demarche", content: "<p><strong>Exploration</strong> — distributions, variables cles, correlations.</p><p><strong>Choix graphiques</strong> — type de representation adapte a chaque message.</p><p><strong>Mise en forme</strong> — coherence couleurs, lisibilite axes, titres explicites.</p><p><strong>Restitution</strong> — presentation orale et justification des choix.</p>"},
+    {title: "Livrable", content: "Visualisations Python (Matplotlib/Seaborn) et presentation PowerPoint."},
+  ],
+  "sae-206": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> Les problématiques de traitement et d\u0027analyse de données mettent en oeuvre des compétences de traitement, d\u0027analyse et de valorisation. Un diplômé doit savoir s\u0027intégrer dans un projet transversal mêlant toutes les compétences de la formation.</p><p><strong>Objectifs :</strong></p><ul><li>Faire comprendre l\u0027interdisciplinarité de la statistique et de l\u0027informatique décisionnelle</li><li>Initier à la conduite de projet et à la planification</li><li>Confronter l\u0027étudiant à toutes les étapes d\u0027un projet en science des données</li><li>Sensibiliser aux problématiques de confidentialité des données</li></ul>"},
+    {title: "Commanditaire", content: "<strong>Region Bretagne</strong> / BreizhGo : analyser les conditions meteorologiques responsables des annulations de liaisons maritimes (Belle-Ile, Groix, Houat, Hoedic) entre 2020 et 2023."},
+    {title: "Collecte des donnees", content: "<p><strong>BreizhGo</strong> — carnets de bord capitaines (Excel) : rotations annulees, cause, navire, date, horaire.</p><p><strong>Candhis</strong> — bouee Belle-Ile : hauteur significative, hauteur maximale, periode, direction houle (toutes les 30 min).</p><p><strong>Windguru</strong> — vitesse vent, rafales, direction (toutes les 6h). Direction en fleches SVG extraites via Python (regex sur \"rotate(\").</p>"},
+    {title: "Traitement", content: "Extraction direction vent via programme Python. Construction base finale : chaque annulation enrichie avec donnees meteo. Base trajets totaux : retranscription manuelle des brochures horaires BreizhGo (4 ans). Restructuration format long via Python."},
+    {title: "Analyses sur R", content: "Univariees qualitatives et quantitatives. Bivariees : variables meteo vs statut annulation. Proportions et limites methodologiques."},
+    {title: "Livrables", content: "Rapport structure et presentation orale devant la Region Bretagne. Donnees confidentielles."},
+  ],
+  "sae-301": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> La SAÉ 3.EMS.01 (Parcours EMS) place l\u0027étudiant en situation de recueil et d\u0027analyse de données par échantillonnage ou plan d\u0027expérience, mobilisant des méthodes de sondage avancées et d\u0027estimation.</p><p><strong>Objectifs :</strong></p><ul><li>Amener l\u0027étudiant à concevoir et mettre en oeuvre un protocole de recueil de données</li><li>Appliquer des méthodes d\u0027estimation adaptées (calage, redressement) pour corriger les biais</li><li>Critiquer et évaluer la qualité des données collectées et des estimations produites</li></ul>"},
+    {title: "Contexte et organisation", content: "<p>La SAE 3.01 EMS est structuree en deux projets complementaires mobilisant la competence \"Recueil et analyse de donnees par echantillonnage ou plan d experience\".</p><p><strong>Projet 1</strong> — Analyse critique de l article \"Exploring the assumption that commercial online nonprobability survey respondents are answering in good faith\" (Statistique Canada, 2024).</p><p><strong>Projet 2</strong> — Etude des donnees de peche maritime bretonne issues du dispositif VALPENA (GIS Valpena, donnees PE BZH 2016-2017).</p><p>Equipe : Valentin Geslin, Victor Morvan, Nathan Simon, Thibaud Valette.</p>"},
+    {title: "Projet 1 - Article Statistique Canada", content: "<p><strong>Sujet</strong> — Remise en question de la sincerite des repondants dans les echantillons non probabilistes commerciaux en ligne, au-dela du simple biais de selection.</p><p><strong>Etude de comparaison</strong> — 6 echantillons en ligne (3 probabilistes ABS, 3 non probabilistes), environ 5 000 repondants chacun, confrontes a 25 indicateurs de reference (American Community Survey, Current Population Survey). Mesure par erreur absolue moyenne.</p><p><strong>Etude de suivi</strong> — 569 repondants issus d un echantillon non probabiliste, questionnaire de 14 questions dont certaines volontairement absurdes (ex. \"Etes-vous autorise a piloter un sous-marin nucleaire ?\") pour detecter les reponses frauduleuses (\"bogus responding\").</p><p><strong>Principaux resultats</strong> — Erreur moyenne : 3% (probabiliste) vs 6,8% (non probabiliste). Ecarts superieurs a 10 points pour les 18-29 ans et les hispaniques. Pres d un quart des hispaniques ont affirme etre qualifies pour piloter un sous-marin nucleaire.</p>"},
+    {title: "Projet 1 - Analyse critique", content: "<p><strong>Apport principal</strong> — Lien etabli entre erreurs de mesure et comportement des repondants (bogus responding), pas seulement biais de selection. Rappel que si les donnees initiales sont fausses, les ajustements statistiques perdent toute valeur.</p><p><strong>Limites identifiees</strong> — Echantillons uniquement americains (non generalisable). Detection via questions extremes seulement (ne repere pas les reponses au hasard discretes). Tableaux denses, peu accessibles. Absence de donnees internationales.</p><p><strong>Proposition</strong> — Etude integrant des questions de controle de concentration, comparaison internationale, repetition de l etude apres quelques annees pour evaluer les progres des plateformes. Approche mixte (probabiliste + non probabiliste) pour reduire les biais sans augmenter les couts.</p>"},
+    {title: "Projet 2 - VALPENA", content: "<p><strong>GIS Valpena</strong> — Groupement d Interet Scientifique cree en 2014 pour produire des donnees spatialisees sur les activites de peche maritime professionnelle en Bretagne. Plan stratifie (stratification par port, engin, longueur), tirage des navires, calcul de poids et reponderation des non-reponses. 7 indicateurs : densite (ID), frequence, intensite (II), dependance spatiale/temporelle/intensite/economique.</p><p><strong>Partie 1 - Donnees PE BZH 2016</strong> — 1 187 navires, 345 tires, 332 enquetes (taux 96%). Scripts R : verification strates, calcul poids theoriques et corriges, production de 6 cartes. Analyse des cartes ID (densite), II (intensite) et IDI (dependance intensite) sur la zone Bretagne sud.</p><p><strong>Partie 2 - Construction PE BZH 2017</strong> — Simulation d enquetes par plan d experience a partir de donnees exhaustives. Comparaison de deux regroupements de strates avec deux taux de precision (5% et 10%). Resultat : bonne precision concentree sur un noyau Bretagne sud, zones peripheriques tres peu fiables (CV > 20%) quelle que soit la precision cible.</p>"},
+    {title: "Livrables", content: "<p>Fiche synthetique 2 pages (article Stat Canada) et rapport 4 pages recto-verso avec annexes cartographiques (projet VALPENA). Pas de captures visuelles - contenus sous forme de rapports PDF.</p>"},
+  ],
+  "sae-302": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> L\u0027intégration de données dans un entrepôt décisionnel est au cœur de la chaîne de traitement des données en entreprise. Le datawarehouse centralise et structure l\u0027information pour la rendre exploitable.</p><p><strong>Objectifs :</strong></p><ul><li>Comprendre l\u0027architecture d\u0027un datawarehouse et son rôle dans la chaîne décisionnelle</li><li>Concevoir et implémenter des processus ETL pour intégrer des sources hétérogènes</li><li>Assurer la qualité, la cohérence et la traçabilité des données intégrées</li></ul>"},
+    {title: "Contexte", content: "Conception et alimentation d un <strong>entrepot de donnees en etoile</strong> a partir de sources heterogenes via Talend Open Studio for Data Integration."},
+    {title: "Demarche", content: "<p><strong>Modelisation</strong> — schema etoile : table de faits + tables dimensions.</p><p><strong>Jobs ETL</strong> — extraction, transformations (tMap, tFilterRow, tAggregateRow), chargement.</p><p><strong>Qualite</strong> — doublons, nulls, incoherences.</p><p><strong>Incremental</strong> — logique de chargement periodic.</p>"},
+    {title: "Livrables", content: "Jobs ETL Talend, schema datawarehouse, documentation technique."},
+  ],
+  "sae-402": [
+    {title: "Objectifs du programme national", content: "<p><strong>Problématique professionnelle :</strong> La conception de solutions de restitution adaptées à un besoin récurrent d\u0027analyse exploratoire est la partie aval de la chaîne décisionnelle. Les diplômés doivent savoir coupler traitement et analyse au sein des organisations.</p><p><strong>Objectifs :</strong></p><ul><li>Approfondir les enjeux du reporting en l\u0027intégrant dans un processus décisionnel</li><li>Favoriser la compréhension de données métiers par description et classification (méthodes factorielles, clustering)</li><li>Accompagner l\u0027étudiant dans le choix d\u0027une méthode statistique adaptée et l\u0027automatisation du reporting</li></ul>"},
+    {title: "Contexte metier", content: "Au moment du projet, Tottenham Hotspur occupait la <strong>16e place de Premier League</strong>, au bord de la relegation. Problematique : quels profils recruter au prochain mercato ? L application devait permettre de diagnostiquer l effectif et identifier des cibles a partir des donnees FPL (Kaggle, 819 joueurs, 80 variables)."},
+    {title: "Organisation en 4 parties", content: "<p><strong>Partie 1 (individuel)</strong> — Initiation a R-Shiny sur donnees de criminalite aux Etats-Unis.</p><p><strong>Partie 2 (individuel)</strong> — Analyse multivariee sous Excel : centrage-reduction, correlations.</p><p><strong>Partie 3 (binome)</strong> — Integration de l ACP via Factoshiny, filtres par axes.</p><p><strong>Partie 4 (groupe de 4)</strong> — Application Spurs FPL Analytics : ACP, K-Means, scouting, deploiement shinyapps.io.</p>"},
+    {title: "Mon role", content: "<p><strong>Initiative du sujet</strong> — proposition de l analyse Spurs en crise comme cas metier.</p><p><strong>Developpement principal</strong> — architecture R-Shiny (ui/server/global), modules ACP et K-Means.</p><p><strong>Module Scouting</strong> — notation sur 6 dimensions, profils manquants, candidats.</p>"},
+    {title: "Resultats", content: "Profil Meneur de jeu totalement absent de l effectif milieu Spurs. Xavi Xavi identifie maillon faible critique (43/100). Huit candidats recommandes."},
+    {title: "Apprentissages critiques", content: "AC21.01 — AC21.04 — AC21.05 — AC22.01 — AC22.03 — AC22.05 — AC23.02 — AC23.03 — AC23.04"},
+  ],
+};
+</script>
+<style>
+.m-tab { border: none; border-radius: 6px; padding: 6px 16px; font-size: .8rem; font-weight: 600; cursor: pointer; background: rgba(255,255,255,.08); color: #94a3b8; transition: all .15s; }
+.m-tab.active { background: #3b82f6; color: #fff; }
+.m-panel { display: none; }
+.m-panel.active { display: block; }
+.sae-card-context { overflow: hidden; max-height: 4.8em; }
+.competences-list { max-height: 90px; overflow: hidden; }
+.capture-slot { height: 130px; overflow: hidden; background: #f8fafc; }
+.capture-slot img { width: 100%; height: 100%; object-fit: contain; }
+.empty-slot { min-height: 130px; max-height: 130px; }
+
+    </style>
+
+<div id="sae-modal" style="display:none;position:fixed;inset:0;z-index:9000;">
+  <div id="m-ov" style="position:absolute;inset:0;background:rgba(0,0,0,.65);cursor:pointer;"></div>
+  <div style="position:relative;z-index:1;margin:30px auto;width:90%;max-width:820px;max-height:90vh;overflow-y:auto;background:#1e293b;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.6);">
+    <div style="background:#0f172a;padding:20px 24px;border-radius:14px 14px 0 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;position:sticky;top:0;z-index:2;">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <span id="m-code" style="background:#3b82f6;color:#fff;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:20px;"></span>
+          <span id="m-sem" style="background:rgba(255,255,255,.12);color:#94a3b8;font-size:.75rem;padding:3px 10px;border-radius:20px;"></span>
+        </div>
+        <p id="m-title" style="color:#f1f5f9;font-weight:700;font-size:1rem;margin:0;line-height:1.4;max-width:640px;"></p>
+      </div>
+      <button id="m-cls" style="background:rgba(255,255,255,.1);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;flex-shrink:0;">&#x2715;</button>
+    </div>
+    <div style="padding:20px 24px;">
+      <p id="m-ctx" style="color:#cbd5e1;font-size:.88rem;line-height:1.7;margin:0 0 18px;"></p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:16px;">
+        <button class="m-tab active" data-tab="m-comp">Competences</button>
+        <button class="m-tab" data-tab="m-outil">Outils</button>
+        <button class="m-tab" data-tab="m-img">Captures</button>
+        <button class="m-tab" data-tab="m-dem" id="m-dem-btn" style="display:none;">Demarche</button>
+      </div>
+      <div id="m-comp" class="m-panel active"></div>
+      <div id="m-outil" class="m-panel"></div>
+      <div id="m-img" class="m-panel"></div>
+      <div id="m-dem" class="m-panel"></div>
+    </div>
+  </div>
+</div>
+
+<div id="lb" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);align-items:center;justify-content:center;">
+  <button onclick="document.getElementById('lb').style.display='none'" style="position:absolute;top:14px;right:18px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;">&#x2715;</button>
+  <img id="lb-img" src="" style="max-width:90vw;max-height:88vh;border-radius:8px;">
+</div>
+
+<script>
+(function(){
+  var el=function(id){return document.getElementById(id);};
+  document.querySelectorAll('.m-tab').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.m-tab').forEach(function(x){x.classList.remove('active');});
+      document.querySelectorAll('.m-panel').forEach(function(p){p.classList.remove('active');});
+      b.classList.add('active');
+      var p=el(b.getAttribute('data-tab'));
+      if(p)p.classList.add('active');
+    });
+  });
+  function close(){el('sae-modal').style.display='none';document.body.style.overflow='';}
+  el('m-cls').onclick=close;
+  el('m-ov').onclick=close;
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();el('lb').style.display='none';}});
+  el('lb').addEventListener('click',function(e){if(e.target===el('lb'))el('lb').style.display='none';});
+  document.addEventListener('click',function(e){
+    var img=e.target.closest&&e.target.closest('.capture-slot img');
+    if(img){el('lb-img').src=img.src;el('lb').style.display='flex';}
+  });
+  window.openLB=function(img){el('lb-img').src=img.src;el('lb').style.display='flex';};
+  window.openSAEModal=function(cardId){
+    var card=el(cardId);if(!card)return;
+    document.querySelectorAll('.m-tab').forEach(function(b){b.classList.remove('active');});
+    document.querySelectorAll('.m-panel').forEach(function(p){p.classList.remove('active');});
+    document.querySelector('.m-tab[data-tab="m-comp"]').classList.add('active');
+    el('m-comp').classList.add('active');
+    var g=function(cls){var e=card.querySelector(cls);return e?e.textContent.trim():'';};
+    el('m-code').textContent=g('.sae-code-badge');
+    el('m-sem').textContent=g('.sae-sem-badge');
+    el('m-title').textContent=g('.sae-card-title');
+    var cx=card.querySelector('.sae-card-context');
+    el('m-ctx').innerHTML=cx?cx.innerHTML:'';
+    var cH='<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">';
+    card.querySelectorAll('.competence-tag').forEach(function(t){
+      cH+='<li style="display:flex;gap:8px;align-items:flex-start;color:#e2e8f0;font-size:.88rem;line-height:1.6;"><span style="color:#4ade80;flex-shrink:0;margin-top:2px;">&#10003;</span><span>'+t.textContent.replace(/^[\s✓]+/,'').trim()+'</span></li>';
+    });
+    el('m-comp').innerHTML=cH+'</ul>';
+    var oH='<div style="display:flex;flex-wrap:wrap;gap:8px;padding-top:4px;">';
+    card.querySelectorAll('.outil-tag').forEach(function(t){oH+='<span class="outil-tag">'+t.innerHTML+'</span>';});
+    el('m-outil').innerHTML=oH+'</div>';
+    var iH='<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;">';
+    var hasI=false;
+    card.querySelectorAll('.capture-slot img').forEach(function(img){
+      var src=img.getAttribute('src')||'';
+      var alt=(img.alt||'').replace(/"/g,'&quot;');
+      iH+='<img src="'+src+'" alt="'+alt+'" style="width:100%;border-radius:6px;cursor:zoom-in;" onclick="openLB(this)">';
+      hasI=true;
+    });
+    if(!hasI)iH+='<p style="color:#94a3b8;font-size:.88rem;">Captures a venir.</p>';
+    iH+='</div>';
+    card.querySelectorAll('.btn-download-sae').forEach(function(a){
+      iH+='<div style="margin-top:10px;"><a href="'+a.getAttribute('href')+'" target="'+(a.target||'_self')+'" class="btn-download-sae">'+a.innerHTML+'</a></div>';
+    });
+    el('m-img').innerHTML=iH;
+    var extra=window.SAE_EXTRA&&window.SAE_EXTRA[cardId];
+    var db=el('m-dem-btn');
+    if(extra&&extra.length){
+      var dH='';
+      extra.forEach(function(s){
+        dH+='<div style="margin-bottom:22px;"><h4 style="color:#93c5fd;font-size:.85rem;font-weight:700;margin:0 0 8px;text-transform:uppercase;letter-spacing:.06em;">'+s.title+'</h4><div style="color:#cbd5e1;font-size:.88rem;line-height:1.8;">'+s.content+'</div></div>';
+      });
+      el('m-dem').innerHTML=dH;
+      db.style.display='';
+    }else{db.style.display='none';}
+    el('sae-modal').style.display='block';
+    document.body.style.overflow='hidden';
+  };
+})();
+</script>
+</body>
+</html>
